@@ -7,190 +7,294 @@
     <title>Save Life Donate Blood</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-        .hero-section {
-            background: url('placeholder-hero-wave.png') no-repeat;
-            background-size: cover;
-            padding: 100px 0;
-        }
-
-        .btn-dark-shadow {
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .collab-box,
-        .how-step {
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-            padding: 40px 20px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #111827;
-            color: #fff;
-            padding: 50px 0;
-        }
-
-        .footer-bottom {
-            font-size: 12px;
-            color: #999;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
-        <div class="container-fluid" style="margin: 52px 62px 0px 62px;">
-            <a class="navbar-brand" href="#"><img src="/Assets/Logo.png" alt="Logo" width="40"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="z-index: 10;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/Assets/Logo.png" alt="Logo" style="z-index: 1;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collaps d-flex " id="navbarNav">
+                <ul class="navbar-nav ml-auto "
+                    style="display: flex; gap: 74px; font-weight: 400; font-size: 24px; align-items: center;">
                     <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Find Blood</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Find Blood</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="registerDropdown" role="button"
-                            data-toggle="dropdown">Register Now</a>
+
+                        <a class="nav-hover nav-link dropdown-toggle text-dark" href="#" id="registerDropdown"
+                            role="button" data-toggle="dropdown">Register Now</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Donor</a>
                             <a class="dropdown-item" href="#">Patient</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="btn btn-outline-dark ml-2" href="#">Log In</a></li>
+                    <li class="nav-item "><a class="btn btn-outline-dark ml-2" href="#"
+                            style="padding: 17px 74px 18PX 75px;color: ; font-size: 24px;">Log
+                            In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-5 font-weight-bold">Save Life Donate Blood</h1>
-            <p class="text-muted mx-auto" style="max-width: 500px;">Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. It has survived not only five centuries...</p>
-            <a href="#" class="btn btn-dark btn-lg mt-3 btn-dark-shadow">Get Blood Now</a>
+    <section class="hero-section text-center d-flex justify-content-end" style="height: 950px; margin-top: -100px;">
+        <div class="bg-image-custom col-12 col-md-8"></div>
+        <div
+            class="col-12 col-md-4 container-fluid d-flex flex-column justify-content-center align-items-end text-right">
+            <h1 class="display-5 font-weight-bold">Save Life Donate
+                Blood </h1>
+            Every drop counts. Your blood donation can give someone a second chance at life. Join our mission to
+            connect donors with those in urgent need. Together, we can make a difference—one drop at a time.
+            Every drop counts. Your blood donation can give someone a second chance at life. Join our mission to
+            connect donors with those in urgent need. Together, we can make a difference—one drop at a time.
+
+            </p>
+            <a href="#" class="btn btn-dark btn-lg mt-4 btn-dark-shadow font-weight-bold p-3 px-4"
+                style="background-color: rgb(2, 2, 2); ; ">Get Blood Now</a>
         </div>
     </section>
 
     <!-- Our Mission -->
-    <section class="py-5">
-        <div class="container">
-            <div class="p-4 bg-light shadow rounded">
-                <h4 class="font-weight-bold">Our Mission</h4>
-                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+
+    <div class="container">
+        <h2 class="section-title text-center">Who We Are?</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 d-flex">
+                <div class="card card-custom">
+                    <div class="">
+                        <div class="card-icon icon-group">
+                            <img style="border-radius: 5px;" src="/Assets/who_we_are.png" alt="fdf" width="300">
+                        </div>
+                        <h5 class="card-title">WHO WE ARE</h5>
+                        <p class="card-text" style="text-align: justify;">We are a non-profit organization dedicated to
+                            building a community-driven blood donation platform. Our goal is to create a seamless
+                            connection between voluntary donors and patients who need life-saving blood.
+
+
+
+                        </p>
+                    </div>
+                </div>
             </div>
+            <div class="col-md-4 d-flex">
+                <div class="card card-custom">
+                    <div class="">
+                        <div class="card-icon icon-group">
+                            <img style="border-radius: 5px;" src="/Assets/mission.png" alt="fdf" width="300">
+                        </div>
+                        <h5 class="card-title">OUR MISSION
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">To promote voluntary blood donation, ensure
+                            availability in times of
+                            emergency, and empower communities through awareness and timely support.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card card-custom">
+                    <div class="">
+                        <div class="card-icon icon-group">
+                            <img style="border-radius: 5px;" src="/Assets/vision.png" alt="fdf" width="300">
+                        </div>
+                        <h5 class="card-title">OUR VISION
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">A future where no life is lost due to blood
+                            unavailability. We envision a
+                            connected, compassionate society that stands united to save lives through regular blood
+                            donations.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-    </section>
+    </div>
+
+
 
     <!-- Collaborators -->
     <section class="py-5">
         <div class="container text-center">
-            <h4 class="font-weight-bold mb-4">Our Collaborators</h4>
+
+            <h2 class="section-title text-center mb-4">Our Collaborators</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="collab-box">NCC</div>
+                <div class="col-md-4 mb-4">
+                    <img style="border-radius: 5px;" src="/Assets/doner1.png" alt="Collaborator 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img style="border-radius: 5px;" src="/Assets/doner2.png" alt="Collaborator 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img style="border-radius: 5px;" src="/Assets/doner3.png" alt="Collaborator 3">
                 </div>
                 <div class="col-md-4">
-                    <div class="collab-box">NSS</div>
+                    <img style="border-radius: 5px;" src="/Assets/doner4.png" alt="Collaborator 4">
                 </div>
                 <div class="col-md-4">
-                    <div class="collab-box">YMCA</div>
+                    <img style="border-radius: 5px;" src="/Assets/doner5.png" alt="Collaborator 5">
+                </div>
+                <div class="col-md-4">
+                    <img style="border-radius: 5px;" src="/Assets/doner6.png" alt="Collaborator 6">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How to Get Blood -->
-    <section class="py-5">
-        <div class="container text-center">
-            <h4 class="font-weight-bold mb-5">How to get Blood?</h4>
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <div class="how-step">
-                        <h3>1</h3>
-                        <p>Step 1 Description</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="how-step">
-                        <h3>2</h3>
-                        <p>Step 2 Description</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="how-step">
-                        <h3>3</h3>
-                        <p>Step 3 Description</p>
+    <div class="container bg-custom">
+        <div class="container mt-5">
+            <div class="font-weight-bold text-center">
+                <h2 class="section-title text-center">How To Get Blood?</h2>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="position-absolute" style="top: 8rem; left: 50%; transform: translateX(-50%);">
+                <div class="position-relative">
+                    <div class="step-circle position-absolute">1</div>
+                    <div class="step-box">
+                        <img src="/Assets/user.png" alt="Get Blood Illustration" style="height: 4rem; width: 4rem;">
+                        <h4 class="mt-3">Registration</h4>
+                        <div class="text-center px-3">
+                            Register as a donor or request blood through our platform. It's fast, secure, and easy.
+
+
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Step 2 & 3 with heart -->
+            <div class="position-absolute w-100 d-flex justify-content-center" style="top: 34rem;">
+                <div class="d-flex align-items-center">
+                    <!-- Step 2 -->
+                    <div class="position-relative mr-5">
+                        <div class="step-circle position-absolute">2</div>
+                        <div class="step-box">
+                            <img src="/Assets/network.png" alt="Get Blood Illustration"
+                                style="height: 4rem; width: 4rem;">
+
+                            <h4 class="mt-3">Matching</h4>
+                            <div class="text-center px-3">
+                                We match requests with available donors in real-time and notify both parties instantly.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Heart Icon -->
+                    <div>
+                        <img src="/Assets/bloodHeart.png" alt="Heart Icon">
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="position-relative ml-5">
+                        <div class="step-circle position-absolute">3</div>
+                        <div class="step-box">
+                            <img src="/Assets/ambulance.png" alt="Get Blood Illustration"
+                                style="height: 4rem; width: 4rem;">
+                            <div class="text-center  px-3">
+                                <h4 class="mt-3"> Get Blood</h4>
+                                Donate blood at a certified center or receive it from verified sources—saving a life
+                                starts here.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+
+
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
+    <footer class="footer">
+        <div class="container-fluid" style="max-width: 1440px;">
             <div class="row">
-                <div class="col-md-4">
-                    <h6>Subscribe to our newsletter</h6>
-                    <form class="form-inline">
-                        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Email address">
-                        <button type="submit" class="btn btn-primary mb-2">&rarr;</button>
-                    </form>
+                <div class="col-lg-4 footer-section">
+                    <img src="/Assets/logo.png" alt="logo" class="mb-4">
+                    <p class="footer-about">Believing in the power of humanity, we connect generous blood donors with
+                        those in urgent need. Join us in building a future where no one has to wait for a second chance
+                        at life. Together, we can save lives—one drop at a time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <h6>Services</h6>
-                    <ul class="list-unstyled">
-                        <li>Email Marketing</li>
-                        <li>Campaigns</li>
-                        <li>Branding</li>
-                        <li>Offline</li>
+
+                <div class="col-lg-2 col-md-6 footer-section">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us
+                            </a></li>
+                        <li><a href="#">Find Blood
+                            </a></li>
+                        <li><a href="#">Register Now </a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
-                    <h6>About</h6>
-                    <ul class="list-unstyled">
-                        <li>Our Story</li>
-                        <li>Benefits</li>
-                        <li>Team</li>
-                        <li>Careers</li>
+
+                <div class="col-lg-2 col-md-6 footer-section">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us
+                            </a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Support</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
-                    <h6>Help</h6>
-                    <ul class="list-unstyled">
-                        <li>FAQs</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-                <div class="col-md-2 text-right">
-                    <p>Ready to get started?</p>
-                    <a href="#" class="btn btn-light">Donate</a>
+
+                <div class="col-lg-4 footer-section">
+                    <h5>Newsletter</h5>
+                    <p class="footer-about">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom text-center mt-4">
-                <p>&copy; 2025 Your Organization. Terms & Conditions | Privacy Policy</p>
-                <div>
-                    <i class="fab fa-facebook mx-2"></i>
-                    <i class="fab fa-twitter mx-2"></i>
-                    <i class="fab fa-instagram mx-2"></i>
-                </div>
+
+            <div class="footer-bottom">
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+                <p>&copy; Md. Al-Amin. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

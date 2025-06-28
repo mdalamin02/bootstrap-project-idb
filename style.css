@@ -1,0 +1,405 @@
+.bg-image-custom {
+    background-image: url('/Assets/heroBanner.png');
+    background-size: contain;
+    /* or 'cover' depending on your need */
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* or 'fixed' if you want parallax feel */
+    min-height: 400px;
+    /* control height */
+    width: 100%;
+    /* control width */
+}
+
+
+.nav-hover:hover {
+    color: #111827;
+}
+
+a.navbar-brand {
+    z-index: 1;
+}
+
+<style>
+
+/* Custom styles for the component */
+.section-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #dc3545;
+    /* Red line like in the image */
+}
+
+.card-custom {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    /* Ensure cards are same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-icon {
+    font-size: 4rem;
+    /* Adjust icon size */
+    margin-bottom: 20px;
+    /* Placeholder colors inspired by the original image */
+}
+
+.icon-group {
+    color: #dc3545;
+    /* Red for the lead figure */
+    position: relative;
+    display: inline-block;
+}
+
+.icon-group .fa-user {
+    color: #6c757d;
+    /* Gray for the other figures */
+}
+
+.icon-group .fa-user-group {
+    color: #dc3545;
+    /* Red for the lead figure in the group */
+    margin-right: -10px;
+    /* Adjust spacing if needed */
+}
+
+.icon-paper-plane {
+    color: #dc3545;
+    /* Red for the main paper plane */
+    position: relative;
+}
+
+.icon-paper-plane .fa-paper-plane {
+    transform: rotate(-45deg);
+    /* Rotate for flying effect */
+}
+
+.icon-paper-plane .fa-paper-plane.gray {
+    color: #6c757d;
+    /* Gray for smaller planes */
+    font-size: 2rem;
+    position: absolute;
+}
+
+.icon-paper-plane .plane-1 {
+    top: 10px;
+    left: -30px;
+}
+
+.icon-paper-plane .plane-2 {
+    top: -20px;
+    right: -40px;
+}
+
+.icon-paper-plane .plane-3 {
+    bottom: 0px;
+    left: -50px;
+}
+
+
+.icon-chart-line {
+    color: #dc3545;
+    /* Red for main growth arrow */
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.icon-chart-line .fa-chart-line {
+    color: #dc3545;
+    /* Red for the tallest arrow */
+}
+
+.icon-chart-line .fa-arrow-up {
+    position: absolute;
+    font-size: 2.5rem;
+    /* Smaller arrows */
+    color: #6c757d;
+    /* Gray for other arrows */
+}
+
+.icon-chart-line .arrow-1 {
+    top: 10px;
+    left: -40px;
+    transform: rotate(-10deg);
+}
+
+.icon-chart-line .arrow-2 {
+    top: 20px;
+    left: -20px;
+    transform: rotate(5deg);
+    right: -10px;
+    bottom: 0;
+}
+
+.icon-chart-line .arrow-3 {
+    top: 5px;
+    right: -45px;
+    transform: rotate(-5deg);
+    left: -10px;
+    bottom: 0;
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+body {
+    font-family: 'Poppins' sans-serif;
+}
+
+.step-circle {
+    height: 6rem;
+    width: 6rem;
+    border: 4px solid black;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-box {
+    height: 20rem;
+    width: 20rem;
+    border: 4px solid black;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.bg-custom {
+    /* background-color: #E5E5E5; */
+    min-height: 61.438rem;
+    position: relative;
+}
+
+
+.btn-dark-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collab-box,
+.how-step {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #111827;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-bottom {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.footer {
+    background: linear-gradient(to right, #1a1c20, #2c3e50);
+    color: #ffffff;
+    padding: 70px 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-about {
+    color: #a4b5c6;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 30px;
+    height: 2px;
+    background: #db3434;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #a4b5c6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #db3434;
+    transform: translateX(5px);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #db3434;
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+.footer-newsletter {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer-newsletter input {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    padding-right: 50px;
+}
+
+.footer-newsletter input::placeholder {
+    color: #a4b5c6;
+}
+
+.newsletter-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    width: 40px;
+    border-radius: 50%;
+    background: #db3434;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background: #db3434;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #a4b5c6;
+}
+
+.footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: #a4b5c6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #db3434;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        margin-bottom: 40px;
+    }
+}
