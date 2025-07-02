@@ -21,6 +21,7 @@ a.navbar-brand {
     z-index: 1;
 }
 
+<style>
 
 /* Custom styles for the component */
 .section-title {
@@ -33,17 +34,7 @@ a.navbar-brand {
     position: relative;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: #dc3545;
-    /* Red line like in the image */
-}
+
 
 .card-custom {
     border: none;
@@ -672,11 +663,5 @@ body {
         padding: 20px;
     }
 }
-.top-header {
-        background-color: white !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
 
 /* Login */
